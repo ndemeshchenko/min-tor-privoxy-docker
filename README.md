@@ -37,7 +37,9 @@ Contains tor and privoxy services controlled by runit.
 Default controll port's password set to "password".
 
 Controll port exposed to make sure user able to change TOR's IP by the following:
-    ```printf "AUTHENTICATE \"password\"\r\nSIGNAL NEWNYM\r\n" | nc localhost 9051```
+
+    printf "AUTHENTICATE \"password\"\r\nSIGNAL NEWNYM\r\n" | nc localhost 9051
 
 Check your TOR's ip:
-    ```curl --proxy localhost:8118 http://icanhazip.com/```
+
+    curl --proxy localhost:8118 http://icanhazip.com/
